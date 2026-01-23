@@ -70,6 +70,18 @@ export PUBLIC_URL=https://your-domain.com
 npm start
 ```
 
+### exe.dev Deployment
+
+If running on an exe.dev VM, you need to configure the proxy to expose the correct port:
+
+```bash
+# From your local machine (not the VM), set the public port
+ssh exe.dev share port <vmname> 3000
+ssh exe.dev share set-public <vmname>
+```
+
+**Important:** exe.dev only allows **one public port at a time**. If you're also running other services (like a dev server), you'll need to choose which one to expose, or run the MCP server on the default port.
+
 ### Connecting from Claude
 
 1. Go to Claude.ai Settings → Connectors

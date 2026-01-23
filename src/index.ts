@@ -19,7 +19,7 @@ app.set('trust proxy', true);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 // Public base URL - set via env var or detect from headers
 const PUBLIC_URL = process.env.PUBLIC_URL || '';

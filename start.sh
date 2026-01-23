@@ -4,7 +4,7 @@
 cd "$(dirname "$0")"
 
 # Default port
-PORT=${PORT:-3001}
+PORT=${PORT:-4000}
 
 # Check if PIN is set
 if [ -z "$MCP_PIN" ]; then
